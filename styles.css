@@ -1,0 +1,476 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('img/women.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.contact-info {
+    background-color: #0e7fdb;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 12px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-right: 10%;
+}
+
+.phone {
+    display: flex;
+    margin-left: 10%;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.4); 
+    height: 80px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 900;
+}
+
+#logo {
+    margin-left: 10%;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#company-text {
+    color: yellow;
+}
+
+nav {
+    margin-right: 10%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+nav a:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    left: -20%;
+    width: 140%;
+    height: 2px;
+    background-color: yellow;
+}
+
+.hero-section {
+    position: relative;
+    margin-top: 250px;
+}
+
+.text-block {
+    position: absolute;
+    left: 10%;
+    max-width: 600px;
+    color: white;
+    text-align: left;
+}
+
+.text-block h1 {
+    font-size: 36px;
+}
+
+.text-block p {
+    font-size: 18px;
+}
+
+.learn-more-button {
+    background-color: #0e7fdb; /* Синий цвет кнопки */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.appointment-section {
+    position: relative;
+    margin-top: 580px;
+}
+
+.appointment-form {
+    background-color: white;
+    width: 80%; /* Ширина блока */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Родительский блок занимает всю высоту */
+}
+
+.appointment-form h2 {
+    font-size: 24px;
+}
+
+.appointment-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.appointment-form .form-field {
+    width: calc(20% - 20px);
+    margin-right: 20px;
+}
+
+.appointment-form label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+.appointment-form input,
+.appointment-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.appointment-form label[for="name"],
+.appointment-form label[for="phone"],
+.appointment-form label[for="service"],
+.appointment-form label[for="Cleaner-name"] {
+    color: #0e7fdb;
+}
+
+.make-appointment-button {
+    background-color: #0e7fdb;
+    color: white;
+    padding: 35px; 
+    align-self: flex-start;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 100%; 
+    box-sizing: border-box; 
+}
+
+/*Блок с человеком*/
+.left-right-blocks {
+    display: flex;
+    margin-right: 9%;
+    margin-left: 9%;
+    position: relative;
+    height: 650px; 
+}
+
+.left-block {
+    flex: 0 0 50%;
+    height: 100%; 
+    overflow: hidden;
+}
+
+.left-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.5); /* Добавлено свойство box-shadow для тени от блока выше */
+}
+
+.right-block {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Добавлено свойство position: relative; */
+    z-index: 1; /* Добавлено свойство z-index для управления слоем блока текста */
+}
+
+
+.text-block-yellow {
+    background-color: yellow;
+    flex: 0 0 20%;
+    padding: 10px;
+}
+.text-block-yellow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.text-block-yellow div {
+    text-align: center;
+}
+
+.text-block-yellow h2 {
+    font-size: 45px;
+    color: black;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.text-block-yellow p {
+    font-size: 14px;
+    color: black;
+    margin: 0;
+}
+
+
+
+.text-block-white {
+    background-color: white;
+    flex: 1;
+    padding: 10px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Выравнивание по вертикали */
+    align-items: right; /* Выравнивание по горизонтали */
+    padding: 40px;
+}
+.text-block-white h1,
+.text-block-white p {
+    font-weight: normal; 
+}
+
+.text-block-white h2 {
+    font-size: 10px;
+    color: #0e7fdb;
+    margin-bottom: 10px;
+}
+
+.text-block-white h1 {
+    font-size: 36px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.text-block-white p {
+    font-size: 16px;
+    color: black;
+}
+
+/*Овер блок*/
+.overlay-block {
+    position: absolute;
+    top: 130%;
+    left: -40px;
+    width: 20%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease;
+    border-radius: 10px;
+}
+
+.overlay-block:hover {
+    left: 0px; 
+}
+
+.blue-section,
+.yellow-section {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.blue-section {
+    background-color: #0e7fdb;
+    color: white;
+}
+.blue-section h2 {
+    color: yellow;
+}
+.blue-section h3 {
+    color: yellow;
+}
+.blue-section p {
+    padding-left: 20px;
+}
+
+.yellow-section {
+    background-color: yellow;
+    color: black;
+}
+/*Srvice colums*/
+.services-section {
+    margin: 0 10%;
+    padding-top: 50px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title h6 {
+    color: #0e7fdb;
+    font-size: 12px;
+}
+
+.title h2 {
+    color: #000;
+    font-size: 36px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.service-card {
+    width: calc(25% - 20px);
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+    position: relative;
+    
+}
+
+.service-card img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    left: -30px;
+}
+
+.service-card h4 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.service-card a {
+    text-decoration: underline; 
+    font-size: 14px;
+    color: #1f1f1f; 
+}
+
+/*Last*/
+.team-section {
+    margin: 50px 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.team-title {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.team-title h3 {
+    color: #0e7fdb;
+    font-size: 12px;
+}
+.team-title p {
+    color: #2d2d2d;
+    font-size: 14px;
+    justify-content: left;
+}
+
+.team-title h2 {
+    color: #000;
+    font-size: 36px;
+    justify-content: left;
+}
+
+.team-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.team-box {
+    width: calc(50% - 20px);
+    text-align: left;
+    border-radius: 5px;
+    position: relative;
+    background-color: #0e7fdb;
+    color: white;
+    margin: 20px;
+}
+
+.team-box img {
+    width: 100%;
+    height: auto;
+}
+
+.team-box h4 {
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center; 
+}
+
+.team-box p {
+    font-size: 14px;
+    text-align: left; 
+}
+
+.team-box .social-links {
+    margin-top: 15px;
+    text-align: center; 
+}
+
+.team-box .social-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    text-align: center; 
+    margin-left: 15px;
+}
+
+.view-all-button {
+    background-color: yellow;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
